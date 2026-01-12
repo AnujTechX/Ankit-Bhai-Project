@@ -1,0 +1,409 @@
+/* responsive for tab */
+
+@media(min-width:601px)and (max-width:1024px){
+html{
+  font-size: 55%;
+}
+.enquiry-wrapper{
+padding: 2rem;
+}
+
+.mobile-number-container li{
+font-size: 1.3rem;
+
+}
+.navbar-wrapper{
+justify-content: space-between;
+gap: 3rem;}
+
+/* top main  section */
+.text h1{
+  font-size: 5.5rem;
+  text-align: center;
+}
+/* =====our service section === */
+.grid{
+  padding: 0 2rem;
+}
+
+/* ===.img-with-text-content== */
+
+
+.left-text h2{
+  font-size: 3.5rem;
+}
+.img-with-text-content,.introduction-content,.our-team-content {
+  padding: 0 2rem;
+}
+
+
+/* ===============================
+      about us page start
+================================== */
+
+/* hero section */
+.hero-grid{
+  padding: 0 2rem;
+}
+/* about section */
+.about-grid .vertical-line{
+  padding: .6rem;
+}
+
+.about-grid .about-first-part h3,.about-second-part h3{
+font-size: 3rem;
+}
+.vertical-line{
+  padding: 1rem 0
+}
+
+/* =================================
+our Approach page start
+=============================== */
+.our-approach-grid{
+  padding: 2rem;
+}
+
+.our-approach-card .our-approach-inner-card {
+
+  bottom: -52%;
+  left: -3%;
+  z-index: 1;
+  width: 27.5rem;
+}
+/* service model section  */
+.our-service-model-content{
+ padding: 0 2rem;
+}
+
+/* =================================
+HR- insights page start
+=============================== */
+
+/* hr insights section  */
+
+.hr-insights-content{
+ padding: 0rem 2rem;
+ gap: 1rem;
+}
+
+/* recent block section  */
+.recent-block-content{
+   padding: 0 2rem;
+ gap: 2rem;
+  }
+/* =================================
+HR- insights page End
+=============================== */
+
+
+/* =================================
+contact us page start
+=============================== */
+.map-container{
+  padding-bottom: 30.6%;
+}
+.map-container iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.information-list{
+  gap: 2rem;
+}
+
+
+.form-grid{
+ padding: 0 2rem;
+}
+/* =================================
+contact us page End
+=============================== */
+}
+
+
+
+@media(min-width:320px) and (max-width:600px){
+html{
+  font-size: 45%;
+}
+/* hide mobile numbers  */
+.mobile-number-container{
+  display: none;
+}
+
+/* hamburger  */
+header{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.navbar-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(-100%);
+  position: absolute;
+  z-index: 99;
+  transition: all .3s ease;
+  top: 7.8rem;
+}
+.active .navbar-wrapper{
+ visibility: visible;
+ opacity: 1;
+ transform: translate(0%);
+}
+
+
+.mobil-navbar-btn{
+  display: block;
+}
+
+.active .mobil-navbar-btn .close-outline{
+  display: block;
+}
+.mobil-navbar-btn .menu-outline{
+  transition: all .3s linear;
+  opacity: 1;
+  transform: rotate(0);
+}
+
+.active .mobil-navbar-btn .menu-outline{
+ /* display: none; */
+ transform: rotate(165deg);
+ visibility: hidden;
+ opacity: 0;
+}
+
+.navbar-wrapper .navbar-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons li{
+  font-size: 4.5rem;
+}
+
+.navbar-list li a{
+  font-size: 2rem;
+}
+.buttons-wrapper{
+  gap: 4rem;
+  padding-right: 1.5rem;
+}
+.navbar-wrapper{
+  justify-content: right;
+}
+
+
+  /* top main section  */
+.main-contents{
+  flex-direction: column;
+}
+.text{
+  width: 100%;
+  padding: 2rem;
+}
+.text h1{
+  font-size: 5.5rem;
+  text-align: center;
+}
+.picture{
+  width: 100%;
+}
+
+/* =====our service section === */
+.card {
+  width: 40rem;
+}
+.grid{
+  flex-direction: column;
+}
+
+/* ===.img-with-text-content== */
+.img-with-text-content{
+  flex-direction: column-reverse;
+}
+.left-text{
+  width: 100%;
+  padding: 2rem;
+}
+.left-text h2{
+  font-size: 3.1rem;
+}
+.right-img{
+  width: 100%;
+}
+
+/* ====================
+introduction section
+====================== */
+.introduction-content{
+  flex-direction: column;
+}
+.introduction-content > .right-img{
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* ===========why-choose us section======== */
+.why-choose-us-content{
+  flex-direction: column;
+}
+.why-choose-us-content > .right-img{
+  width: 100%;
+  padding: 0 2rem;
+}
+/* ======our-team section==== */
+.our-team-content{
+  flex-direction: column;
+ 
+}
+.our-team-content > .right-img{
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* ===============================
+      about us page start
+================================== */
+  /* top image banner section  */
+  .img-container img {
+  object-fit: cover;
+  display: block;
+  width: 200%;
+}
+
+
+
+.about-us-content{
+  flex-direction: column;
+}
+.about-us-content > .right-img{
+  width: 100%;
+}
+.about-us-content .left-text{
+  width: 100%;
+}
+   /* hero section  */
+  .hero-grid{
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+
+
+/* about section */
+.about-grid{
+  flex-direction:column;
+}
+
+.about-grid  .about-first-part,.about-second-part{
+  width: 100%;
+  padding: 2rem;
+}
+.about-grid .about-first-part h3, .about-second-part h3{
+font-size: 3rem;
+}
+.vertical-line{
+  padding: 1rem 0
+}
+
+/* ===============================
+      about us page end
+================================== */
+
+
+
+
+/* =================================
+our Approach page start
+=============================== */
+
+.our-approach-grid{
+ flex-direction: column;
+ gap: 19rem;
+}
+
+/* service model section  */
+.our-service-model-content{
+ flex-direction: column;
+}
+.our-service-model-content .right-img{
+  padding: 0 2rem;
+}
+/* ===our-framework-section start ===== */
+
+
+.framework-card{
+  height: 25rem;
+}
+
+
+/* =================================
+HR- insights page start
+=============================== */
+/* hr insights section  */
+
+.hr-insights-content{
+  flex-direction: column;
+}
+
+/* recent block section  */
+.recent-block-content{
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+/* =================================
+HR- insights page End
+=============================== */
+
+/* =================================
+contact us page start
+=============================== */
+.map-container{
+  padding-bottom: 65.6%;
+}
+.map-container iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.information-list{
+  gap: 2rem;
+}
+.information-list li a{
+width: 40rem;
+}
+
+.form-grid{
+  flex-direction: column;
+}
+
+.form-grid .description{
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+.form-grid form{
+  width: 100%;
+  padding: 2rem;
+
+}
+/* =================================
+contact us page End
+=============================== */
+
+
+
+}
