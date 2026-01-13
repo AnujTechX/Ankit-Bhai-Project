@@ -4,6 +4,40 @@
 html{
   font-size: 55%;
 }
+
+/* page heading  */
+.about-us-top-title h1 {
+  font-size: 4rem;
+}
+/* enable-background section  */
+.mobile-number-container{
+  gap: 0;
+}
+.mobile-number-container li {
+  font-size: 1.1rem;
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.buttons-wrapper {
+
+  gap: 3rem;
+}
+.button {
+  font-family: poppins;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  background-color: var(--iconsColor);
+  padding: .8rem 1.5rem;
+}
+
+
 .enquiry-wrapper{
 padding: 2rem;
 }
@@ -12,9 +46,15 @@ padding: 2rem;
 font-size: 1.3rem;
 
 }
+  /* .navbar-list  */
 .navbar-wrapper{
-justify-content: space-between;
-gap: 3rem;}
+justify-content: space-around;
+gap: 2rem;
+padding: 2rem;
+}
+.navbar-list li{
+  font-size: 1.4rem;
+}
 
 /* top main  section */
 .text h1{
@@ -62,19 +102,28 @@ our Approach page start
 =============================== */
 .our-approach-grid{
   padding: 2rem;
+  gap: 3rem;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
 .our-approach-card .our-approach-inner-card {
+    height: 100%;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 
-  bottom: -52%;
-  left: -3%;
-  z-index: 1;
-  width: 27.5rem;
+}
+.our-approach-card .our-approach-inner-card p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
 /* service model section  */
 .our-service-model-content{
  padding: 0 2rem;
 }
+
+
 
 /* =================================
 HR- insights page start
@@ -109,7 +158,8 @@ contact us page start
 }
 
 .information-list{
-  gap: 2rem;
+row-gap: 2rem;
+  column-gap: 5rem;
 }
 
 
@@ -125,7 +175,12 @@ contact us page End
 
 @media(min-width:320px) and (max-width:600px){
 html{
-  font-size: 45%;
+  font-size: 50%;
+}
+
+/* page heading  */
+.about-us-top-title h1 {
+  font-size: 3rem;
 }
 /* hide mobile numbers  */
 .mobile-number-container{
@@ -197,8 +252,12 @@ header{
   font-size: 2rem;
 }
 .buttons-wrapper{
-  gap: 4rem;
+  gap: 3rem;
   padding-right: 1.5rem;
+}
+
+.button{
+    padding: .8rem 1.5rem;
 }
 .navbar-wrapper{
   justify-content: right;
@@ -223,7 +282,7 @@ header{
 
 /* =====our service section === */
 .card {
-  width: 40rem;
+  width: 35rem;
 }
 .grid{
   flex-direction: column;
@@ -272,7 +331,17 @@ introduction section
   width: 100%;
   padding: 0 2rem;
 }
-
+/* footer section  */
+.footer-grid{
+  gap: 4rem;
+  padding: 0 1rem;
+}
+.footer-list{
+  gap: 2rem;
+  padding: 0 1rem;
+  justify-items: center;
+  justify-content: center;
+}
 /* ===============================
       about us page start
 ================================== */
@@ -343,11 +412,31 @@ our Approach page start
 }
 /* ===our-framework-section start ===== */
 
+.our-framework-content .shape-card {
+  flex-direction: column;
+}
+.framework-card .inner-card{
+  width: 100%;
+}
 
 .framework-card{
   height: 25rem;
+  width: 100%;
 }
+/* inner icons  */
+.shape-card .down-arrow-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ transform: none;
+}
+/* outer icons  */
+.our-framework-content .left-arrow-icon,.our-framework-content .right-arrow-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 
 /* =================================
 HR- insights page start
@@ -381,6 +470,13 @@ contact us page start
 
 .information-list{
   gap: 2rem;
+}
+
+.information-list li{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .information-list li a{
 width: 40rem;
