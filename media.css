@@ -176,6 +176,10 @@ contact us page End
 @media(min-width:320px) and (max-width:600px){
 html{
   font-size: 50%;
+
+}
+body{
+  overflow-x: hidden;
 }
 
 /* page heading  */

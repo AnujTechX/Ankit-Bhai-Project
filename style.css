@@ -4,6 +4,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+outline: 1px red solid;
 }
 
 :root{
@@ -458,6 +459,7 @@ why choose us section
   max-width: 1200px;
   margin: 0 auto;
   gap: 5rem;
+  overflow: hidden;
 }
 .why-choose-us-content >.right-img{
   width: 40%;
@@ -654,6 +656,7 @@ transition: all .3s linear;
   max-width: 1200px;
   margin: 0 auto;
   gap: 5rem;
+  overflow: hidden;
 }
 .about-us-content .right-img{
   width: 40%;
@@ -680,6 +683,7 @@ transition: all .3s linear;
   margin: 0 auto;
   gap: 2rem;
   text-align: center;
+  overflow: hidden;
 }
 .hero-grid .hero-first-part h3, .hero-second-part h3{
   font-size: var(--big-text-size);
@@ -722,6 +726,7 @@ transition: all .3s linear;
   width: 100%;
   margin:0 auto;
   gap: 2rem; 
+  overflow: hidden;
 }
 .vertical-line{
   background-color: var(--iconsColor);
@@ -1080,6 +1085,7 @@ HR- insights page start
     max-width: 1200px;
     margin: 0 auto;
     gap: 5rem;
+    overflow: hidden;
 }
 .recent-block-content .left-text h2{
   
@@ -1235,6 +1241,7 @@ display: grid;
   gap: 3rem;
   max-width: 120rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 .description{
   width: 50%;
